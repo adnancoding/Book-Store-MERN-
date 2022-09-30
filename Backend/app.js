@@ -10,7 +10,7 @@ app.use("/books",router);
 
 //Middlewares
 
-mongoose.connect("mongodb+srv://admin:0muYEXFmJF3n6Mxu@cluster0.0z8frmr.mongodb.net/bookStore?retryWrites=true&w=majority")
+mongoose.connect("mongodb://localhost:27017/book-store")
 .then(()=>console.log("Connected to database")).then(()=>{
     app.listen(5000);
 }).catch((err)=>console.log(err));
